@@ -1,0 +1,76 @@
+h2{
+    text-align: center;
+}
+.users-container{
+    // border: 1px solid #dee2e6; 
+    height: 450px;
+    overflow: auto;
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #000;
+        border-radius: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-image: linear-gradient(to bottom,#020348,#166fa4 53%,#1ab1dc);
+    }
+    &::-webkit-scrollbar {
+        width: 10px;
+    }   
+    
+}
+.user {
+  border: 1px solid rgb(204, 203, 203);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  width: 80%;
+  min-width: min-content;
+
+  & h3 {
+    margin-left: 50px;
+    &:last-child{
+        margin-right: 50px;
+    }
+  }
+}
+.paginationButtons {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+
+  & a {
+    padding: 10px;
+    // margin: 8px;
+    // border-radius: 5px;
+    border: none;
+    outline: none;
+    // border: 1px solid #2b2eff;
+    color: #007bff;
+    border: 1px solid #dee2e6;
+
+    // color: #2b2eff;
+    cursor: pointer;
+    &:hover {
+      color: #007bff;
+      background-color: #f0f0f0;
+    }
+  }
+}
+.paginationActive a {
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #092e6f, #1699c7);
+}
+.previousButton{
+    border-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.nextButton{
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
